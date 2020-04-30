@@ -1,9 +1,10 @@
 import axios from 'axios';
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
+import fetch from 'isomorphic-unfetch';
 
 export const getAllNotes = async () => {
-    const res = await axios.get(process.env.URI)
-    const notes = await res.data;
+    const res = await fetch(process.env.URI)
+    const notes = await res.json();
     // console.log(res.data);
     return notes.data;
 };
