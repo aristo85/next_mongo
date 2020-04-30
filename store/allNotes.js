@@ -2,9 +2,10 @@ import axios from 'axios';
 import fetch from "node-fetch";
 
 export const getAllNotes = async () => {
-    const res1 = await fetch(process.env.URI)
-    const posts = await res1.json();
-    return posts.data;
+    const res = await axios.get(process.env.URI)
+    const notes = await res.data;
+    // console.log(res.data);
+    return notes.data;
 };
 
 export const getAllPaths = async () => {
