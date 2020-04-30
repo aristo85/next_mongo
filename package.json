@@ -1,0 +1,22 @@
+{
+  "name": "next_mongo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "mongoose": "^5.9.10",
+    "next": "9.3.5",
+    "node-fetch": "^2.6.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.4.1",
+    "yup": "^0.28.4"
+  }
+}
