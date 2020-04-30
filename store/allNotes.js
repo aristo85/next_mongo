@@ -3,10 +3,14 @@ import axios from 'axios';
 import fetch from 'isomorphic-unfetch';
 
 export const getAllNotes = async () => {
-    const res = await fetch(process.env.URI)
-    const notes = await res.json();
-    // console.log(res.data);
-    return notes.data;
+    return fetch(process.env.URI)
+        .then(r => r.json())
+        .then(data => {
+            const notes = data.data;
+            console.log(notes);
+            return notes;
+
+        });
 };
 
 export const getAllPaths = async () => {
