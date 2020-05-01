@@ -80,7 +80,7 @@ class New extends Component {
 
                 {/*            </Form>*/}
                 {/*    }*/}
-                </div>
+                {/*</div>*/}
             </div>
         );
     }
